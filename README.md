@@ -1,2 +1,4 @@
 # CDL
-Code for our paper: Consistent Discrepancy Learning for Intra-camera Supervised Perosn Re-Identification
+Official PyTorch implementation of CDL: Consistent Discrepancy Learning for Intra-camera Supervised Perosn Re-Identification.
+
+Code will be released soon.
