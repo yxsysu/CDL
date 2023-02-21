@@ -1,0 +1,48 @@
+optimizer: 'adam'
+optimizer_step: [32, 64, 96, 128]
+optimizer_gamma: 0.5
+
+data:
+  save_dir: 'log/exp_1'
+  num_instance: 4
+  image_size: [384, 128]
+  crop_size: [384, 128]
+
+net:
+  bn: True
+  normface: True
+  scale: 25.0
+
+val:
+  freq: 16
+
+aug:
+  color_jitter: True
+  random_erase: True
+  
+train:
+  max_epoch: 144
+  batch_size: 32
+  
+  fc_lr: 1e-3
+  lr: 2e-4
+  em_lr: 2e-4
+  warm_up_epoch: -1
+
+  load_weight: './pretrained_model/model.pth'
+
+
+loss:
+  epsilon: 0.0
+  RKA: 2.0
+  p: 0.1
+  lamda: 0.5
+  tau: 1.0
+
+  filter:
+    enable: True
+    momentum: 0.01
+    sim_threshold: 0.6
+    step_size: 0.05
+    update_epoch: [16, 32]
+    mutual: True
