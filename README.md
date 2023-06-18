@@ -4,7 +4,8 @@ Official PyTorch implementation of CDL: Consistent Discrepancy Learning for Intr
 Change the dataset path in lines 450-455 in utils.py to your path to the dataset. 
 Set the ``load_weight'' in exp_1.yaml to your path to the pretrained model.
 The pretrained model is trained to classify the persons under each view and learn pedestrian prototypes[1].
-We provide our pretrained model at: https://pan.baidu.com/s/1kKrySNtjcoEvcuJp0ElVgQ?pwd=tkh7 【key: tkh7】 
+We provide our pretrained model at:https://pan.baidu.com/s/1dduMG0FEvWSSHWpei9v_sQ?pwd=cxub
+key: 【cxub】
 
 Example: python main.py --gpu 0,1 --config config/exp_1.yaml
 
